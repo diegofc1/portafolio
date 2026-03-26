@@ -1,6 +1,43 @@
+:root{
+    --colorPrimario: #F2E8D0;
+    --colorSecundario: black;
+    --letraOscura: black; 
+    --letraClara: white;
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+.header{
+    background-color: var(--colorSecundario);
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    height: 30vh;
+}
+.header__imagen{
+    border-radius:5px;
+    width: 60px;
+    height: 75px;
+}
+.header__titulo{
+    color: white; 
+}
+.main{
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+}
+.aside{
+    background-color: var(--colorSecundario);
+    color: var(--letraClara);
+    padding: 10px;
+    position:sticky;
+    
+}
+.principal{
+    padding: 10px;
 
+}
