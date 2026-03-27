@@ -1,5 +1,5 @@
 :root{
-    --colorClaro: #F2E8D0;
+    --colorClaro: #eca90b;
     --colorOscuro: black;
     --letraOscura: black; 
     --letraClara: white;
@@ -11,7 +11,7 @@
 }
 .header{
     background-color: var(--colorOscuro);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content:center;
     gap: 30px;
@@ -29,6 +29,9 @@
     background-color: var(--colorClaro);
     display: flex;
     justify-content: center;
+    padding: 0px 20px 0px 0px;
+    line-height: 1.4;
+    
 }
 .aside{
     background-color: var(--colorOscuro);
@@ -41,4 +44,12 @@
 .principal{
     padding: 10px;
 
+}
+.footer{
+    background-color: var(--colorOscuro);
+    padding: 10px;
+}
+.footer__redSocial{
+    text-decoration: none;
+    color: white;
 }
