@@ -1,6 +1,6 @@
 :root{
-    --colorPrimario: #F2E8D0;
-    --colorSecundario: black;
+    --colorClaro: #F2E8D0;
+    --colorOscuro: black;
     --letraOscura: black; 
     --letraClara: white;
 }
@@ -10,7 +10,7 @@
     margin: 0;
 }
 .header{
-    background-color: var(--colorSecundario);
+    background-color: var(--colorOscuro);
     padding: 10px;
     display: flex;
     justify-content:center;
@@ -26,16 +26,17 @@
     color: white; 
 }
 .main{
-    background-color: var(--colorPrimario);
+    background-color: var(--colorClaro);
     display: flex;
     justify-content: center;
 }
 .aside{
-    background-color: var(--colorSecundario);
+    background-color: var(--colorOscuro);
     color: var(--letraClara);
     padding: 10px;
-    position:sticky;
-    
+}
+.aside__vinculo::before{
+    content: "- ";    
 }
 .principal{
     padding: 10px;
