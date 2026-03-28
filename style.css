@@ -28,6 +28,7 @@
 .main{
     background-color: var(--colorClaro);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 0px 20px 0px 0px;
     line-height: 1.4;
@@ -37,6 +38,7 @@
     background-color: var(--colorOscuro);
     color: var(--letraClara);
     padding: 10px;
+    width: 200px;
 }
 .aside__vinculo::before{
     content: "- ";    
