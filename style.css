@@ -32,20 +32,25 @@
 .main{
     background-color: var(--colorClaro);
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 0px 10px;
+    padding-left: 0px;
     line-height: 1.4;
-    
 }
 .aside{
+    padding: 10px;
     background-color: var(--colorOscuro);
     color: var(--letraClara);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
     width: 200px;
 }
 .aside__vinculo::before{
     content: "- ";    
+}
+.aside__vinculo:hover{
+    border-bottom: 1px solid var(--colorClaro);
 }
 .principal{
     padding: 10px;
