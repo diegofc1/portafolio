@@ -40,9 +40,16 @@
 }
 .aside{
     padding: 10px;
-    background:linear-gradient(var(--colorClaro),var());
+    /* background: linear-gradient(to right, rgb(88, 199, 235), lightgreen, orange); */
+    /* background: radial-gradient(at top left, pink, blue); */
+    background:linear-gradient(var(--colorClaro),var(--colorOscuro)); 
+    /* Formas para dar un degradado en Css */
     /* background: conic-gradient(#e38f2f,yellow, #3dffa1); */
-    /* background: radial-gradient(circle, var(--colorClaro),var(--colorOscuro)); */
+    /* background: radial-gradient(circle, var(--colorClaro),var(--colorOscuro)); 
+    background: radial-gradient(at top left, pink, blue)*/
+
+    /*Podemos reasignar el valor de una variable para que sólo ese elemento pueda tener un valor diferente. En este caso, el color de background:*/
+    --colorClaro: #3454d3;
     color: var(--letraClara);
     padding: 10px;
     display: flex;
@@ -54,6 +61,7 @@
 }
 .aside__vinculo:hover{
     border-bottom: 1px solid var(--colorClaro);
+    transition: .3s;
 }
 .principal{
     padding: 10px;
