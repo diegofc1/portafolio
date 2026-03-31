@@ -30,16 +30,19 @@
     color: white; 
 }
 .main{
-    background-color: var(--colorClaro);
+    background: linear-gradient(var(--colorOscuro),var(--colorClaro));
     display: flex;
     justify-content: center;
-    padding: 0px 10px;
+    padding: 30px 10px;
     padding-left: 0px;
     line-height: 1.4;
+    color: var(--letraClara);
 }
 .aside{
     padding: 10px;
-    background-color: var(--colorOscuro);
+    background:linear-gradient(var(--colorClaro),var());
+    /* background: conic-gradient(#e38f2f,yellow, #3dffa1); */
+    /* background: radial-gradient(circle, var(--colorClaro),var(--colorOscuro)); */
     color: var(--letraClara);
     padding: 10px;
     display: flex;
