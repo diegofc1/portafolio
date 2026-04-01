@@ -30,16 +30,16 @@
     color: white; 
 }
 .main{
-    background: linear-gradient(var(--colorOscuro),var(--colorClaro));
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 30px 10px;
     padding-left: 0px;
     line-height: 1.4;
+    background: linear-gradient(rgb(241, 174, 5), black);
     color: var(--letraClara);
 }
 .aside{
-    padding: 10px;
     /* background: linear-gradient(to right, rgb(88, 199, 235), lightgreen, orange); */
     /* background: radial-gradient(at top left, pink, blue); */
     background:linear-gradient(var(--colorClaro),var(--colorOscuro)); 
@@ -50,14 +50,18 @@
 
     /*Podemos reasignar el valor de una variable para que sólo ese elemento pueda tener un valor diferente. En este caso, el color de background:*/
     --colorClaro: #3454d3;
-    color: var(--letraClara);
-    padding: 10px;
     display: flex;
-    flex-direction: column;
-    width: 200px;
+    justify-content: space-between;
+    width: 100vw;
+    color: var(--letraClara);
+    padding: 1%;
 }
 .aside__vinculo::before{
     content: "- ";    
+}
+.aside__vinculo{
+    margin: 2px 5px;
+    
 }
 .aside__vinculo:hover{
     border-bottom: 1px solid var(--colorClaro);
