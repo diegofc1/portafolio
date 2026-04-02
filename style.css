@@ -1,6 +1,6 @@
 :root{
-    --colorClaro: #eca90b;
-    --colorOscuro: black;
+    --colorClaro: #d8d7d3;
+    --colorOscuro: rgb(39, 33, 33);
     --letraOscura: black; 
     --letraClara: white;
 }
@@ -14,20 +14,18 @@
 ;
 }
 .header{
-    background-color: var(--colorOscuro);
+    background-color: var(--colorClaro);
     padding: 20px;
     display: flex;
     justify-content:center;
     gap: 30px;
     height: 30vh;
+
 }
 .header__imagen{
     border-radius:5px;
     width: 60px;
     height: 75px;
-}
-.header__titulo{
-    color: white; 
 }
 .main{
     display: flex;
@@ -36,28 +34,22 @@
     padding: 30px 10px;
     padding-left: 0px;
     line-height: 1.4;
-    background: linear-gradient(rgb(241, 174, 5), black);
-    color: var(--letraClara);
+    background-color: var(--colorClaro);
 }
 .aside{
     /* background: linear-gradient(to right, rgb(88, 199, 235), lightgreen, orange); */
-    /* background: radial-gradient(at top left, pink, blue); */
-    background:linear-gradient(var(--colorClaro),var(--colorOscuro)); 
+    /* background: radial-gradient(at top left, pink, blue); */ 
     /* Formas para dar un degradado en Css */
     /* background: conic-gradient(#e38f2f,yellow, #3dffa1); */
     /* background: radial-gradient(circle, var(--colorClaro),var(--colorOscuro)); 
     background: radial-gradient(at top left, pink, blue)*/
-
     /*Podemos reasignar el valor de una variable para que sólo ese elemento pueda tener un valor diferente. En este caso, el color de background:*/
-    --colorClaro: #3454d3;
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    color: var(--letraClara);
     padding: 1%;
-}
-.aside__vinculo::before{
-    content: "- ";    
+    background-color: var(--colorOscuro);
+    color: var(--colorClaro);
 }
 .aside__vinculo{
     margin: 2px 5px;
@@ -72,10 +64,12 @@
 
 }
 .footer{
-    background-color: var(--colorOscuro);
-    padding: 10px;
+    display: flex;
+    gap: 4px;
 }
 .footer__redSocial{
     text-decoration: none;
-    color: white;
-}
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--colorClaro), var(--colorOscuro));
+} 
