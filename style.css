@@ -4,6 +4,9 @@
     --letraOscura: black; 
     --letraClara: white;
 }
+.body{
+    background-color: var(--colorClaro);
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -32,9 +35,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px 10px;
-    padding-left: 0px;
     line-height: 1.4;
     background-color: var(--colorClaro);
+    padding: 20px;
 }
 .aside{
     /* background: linear-gradient(to right, rgb(88, 199, 235), lightgreen, orange); */
@@ -45,24 +48,37 @@
     background: radial-gradient(at top left, pink, blue)*/
     /*Podemos reasignar el valor de una variable para que sólo ese elemento pueda tener un valor diferente. En este caso, el color de background:*/
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    padding: 1%;
+    padding: 20px;
     background-color: var(--colorOscuro);
-    color: var(--colorClaro);
+    color: var(--colorClaro); 
 }
 .aside__vinculo{
     margin: 2px 5px;
-    
+    text-decoration: none;
+    color: var(--colorClaro);
 }
 .aside__vinculo:hover{
     border-bottom: 1px solid var(--colorClaro);
     transition: .3s;
 }
-.principal{
-    padding: 10px;
-
+.misionYvision{
+    display: flex; 
+    gap:5px;
 }
+.mision, .vision{
+    border-radius:20px;
+    margin: 20px;
+    padding: 30px; 
+    width: 50%;
+    height: 60vh;
+    background-color: var(--colorOscuro);
+    color: var(--colorClaro);
+    background:linear-gradient(to right, var(--colorOscuro), rgb(83, 39, 14));
+}
+
 .footer{
     display: flex;
     gap: 4px;
@@ -71,5 +87,5 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    background: linear-gradient(to right, var(--colorClaro), var(--colorOscuro));
+    /* background: linear-gradient(to right, var(--colorClaro), var(--colorOscuro)); */
 } 
