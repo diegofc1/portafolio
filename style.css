@@ -62,18 +62,19 @@
 }
 .aside__vinculo:hover{
     border-bottom: 1px solid var(--colorClaro);
-    transition: .3s;
+    transition: 1s;
 }
 .misionYvision{
     display: flex; 
     gap:5px;
+
 }
 .mision, .vision{
     border-radius:20px;
     margin: 20px;
     padding: 30px; 
     width: 50%;
-    height: 60vh;
+    height:fit-content;
     background-color: var(--colorOscuro);
     color: var(--colorClaro);
     background:linear-gradient(to right, var(--colorOscuro), rgb(83, 39, 14));
@@ -82,10 +83,25 @@
 .footer{
     display: flex;
     gap: 4px;
+    background-color: var(--colorOscuro);
+    color: white;
+    height: 40vh;
 }
 .footer__redSocial{
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    color: white;
+    height: 10vh;
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    transition: transform 1s ease 0s, background-color 1s ease 0s;
     /* background: linear-gradient(to right, var(--colorClaro), var(--colorOscuro)); */
 } 
+.footer__redSocial:hover{
+    transform:scale(1.2);
+    background-color: rgb(218, 87, 48);
+
+}
